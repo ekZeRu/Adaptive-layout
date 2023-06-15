@@ -1,19 +1,21 @@
 @font-face {
-    font-family: "OpenSans-Bold";
-    src: url(../fonts/OpenSans-Bold.woff);
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: "OpenSans-Regular";
+    font-family: "OpenSans";
     src: url(../fonts/OpenSans-Regular.woff);
     font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: url(../fonts/OpenSans-Bold.woff);
+    font-weight: 700;
     font-style: normal;
 }
 body {
     min-width: 400px;
     margin: 0 0 0 0;
     padding: 0 0 0 0;
+    font-family: "OpenSans", sans-serif;
 }
 
 .header-logo-mobile {
@@ -77,21 +79,20 @@ a {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 13px;
-    font-weight: 700;
     color: #ffffff;
-    font-family: OpenSans-Regular;
 }
-.menu-list-item:nth-child(n + 2) {
+.menu-list-item-another {
     margin-left: 35px;
 }
 .header-title {
+    font-weight: bold;
     max-width: 720px;
     margin: 0 auto;
     margin-top: 101px;
     text-transform: uppercase;
     font-size: 45px;
     line-height: 1.6;
-    font-family: OpenSans-Bold;
+
 }
 .news-category-list,
 .news-date-author-list {
@@ -104,22 +105,22 @@ a {
     display: flex;
     max-width: 1170px;
     justify-content: space-between;
-    padding: 60px 15px 0 15px;
+    padding: 0 15px 0 15px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 64px;
 }
 .main {
     width: 778px;
 }
 .news {
     display: flex;
-    font-family: OpenSans-Regular;
 }
-.news:nth-child(n + 2) {
+.news-another {
     margin-top: 47px;
 }
 .news-title {
-    font-family: OpenSans-Bold;
+    font-weight: bold;
     font-size: 20px;
     line-height: 24px;
     text-transform: uppercase;
@@ -134,15 +135,13 @@ a {
     display: inline-block;
     font-size:0;
 }
-.news-category-list-item:nth-child(n + 2) {
+.news-category-list-item-another {
     margin-left: 15px;
 }
-.news-date-author-list-item:nth-child(n + 2) {
-    margin-left: 15px;
-}
+
 .news-category-link {
     text-decoration: none;
-    font-family: OpenSans-Bold;
+    font-weight: bold;
     font-size: 14px;
     text-transform: uppercase;
     color: #b59f5b;
@@ -150,17 +149,15 @@ a {
 .news-date-link {
     font-size: 12px;
     color: #888888;
-    font-family: OpenSans-Regular;
 }
 .news-author-link {
-    font-family: OpenSans-Bold;
+    font-weight: bold;
     font-size: 12px;
     padding-left: 8px;
 }
 .news-text {
     font-size: 15px;
     margin-top: 44px;
-    font-family: OpenSans-Regular;
 }
 .news-media {
     margin: 7px 30px 0 0;
@@ -175,13 +172,13 @@ p:first-child {
 aside {
     width: 280px;
 }
-.sidebar-section:nth-child(n + 2) {
+.sidebar-section-another {
     margin: 50px 0 0 8px;
 }
 .sidebar-title {
     text-align: center;
-    margin: 0 0 25px 14px;
-    font-family: OpenSans-Bold;
+    margin: 60px 0 25px 14px;
+    font-weight: bold;
     text-transform: uppercase;
     font-size: 14px;
 }
@@ -195,16 +192,15 @@ aside {
 }
 .recent-item {
     display: flex;
-    font-family: OpenSans-Regular;
 }
-.recent-item:nth-child(n + 2) {
+.recent-item-another {
     margin-top: 10px;
 }
 .recent-picture {
     margin: 12px 20px 0 9px;
 }
 .recent-item-title {
-    font-family: OpenSans-Bold;
+    font-weight: bold;
     text-transform: uppercase;
     line-height: 18px;
     font-size: 14px;
@@ -212,15 +208,14 @@ aside {
 }
 .search {
     display: flex;
-    margin: 55px 0 0 8px;
+    margin-top: 55px;
     justify-content: space-between;
 }
 .search-field {
     border: none;
     box-sizing: border-box;
-    padding: 8px 48px 10px 17px;
+    padding: 8px 160px 10px 17px;
     margin: 0;
-    font-family: OpenSans-Regular;
     font-size: 13px;
     height: 48px;
     background-color: #f4f7f6;
@@ -253,7 +248,7 @@ aside {
     font-size: 14px;
     cursor: pointer;
     padding-left: 17px;
-    font-family: OpenSans-Bold;
+    font-weight: bold;
 }
 .subscribe-button:hover {
     background-color: #b5ac5a;
@@ -267,7 +262,6 @@ aside {
     height: 48px;
     width: 100%;
     background-color: #f4f7f6;
-    font-family: OpenSans-Regular;
 }
 .tag-list {
     padding: 0;
@@ -280,7 +274,7 @@ aside {
     border: 3px solid #f4f3f1;
     text-transform: uppercase;
     font-size: 12px;
-    font-family: OpenSans-Bold;
+    font-weight: bold;
 }
 .tag-list-link {
     display: inline-block;
@@ -296,12 +290,12 @@ aside {
     padding: 15px 0;
     text-transform: capitalize;
     font-size: 14px;
-    font-family: OpenSans-Bold;
+    font-weight: bold;
 }
 .categories-numbers {
     color: #b59f5b;
     font-size: 12px;
-    font-family: OpenSans-Bold;
+    font-weight: bold;
     margin-left: 5px;
 }
 .footer {
@@ -366,7 +360,7 @@ aside {
 .footer-text {
     font-size: 12px;
     color: #999999;
-    font-family: OpenSans-Bold;
+    font-weight: bold;
     margin-bottom: 30px;
     text-align: center;
 }
@@ -462,7 +456,7 @@ aside {
 }
 
 .trends {
-    max-width: 1170px;
+    width: 100%;
     margin: auto;
 }
 
@@ -489,15 +483,16 @@ aside {
 }
 
 .trend_post {
-    width: calc((100%/4) - 5px);
+    width: 25%;
     display: flex;
     flex-direction: column-reverse;
-    padding: 6% 20px 22px 20px;
+    padding: 160px 20px 16px 20px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     position: relative;
     z-index: 0;
+    margin: 4px;
 }
 
 .trend_post_grave {
@@ -542,7 +537,7 @@ aside {
     text-decoration: none;
 }
 
-.trend_tag:nth-child(n + 2) {
+.trend_tag_second {
     margin-left: 19px;
 }
 
@@ -551,7 +546,7 @@ aside {
     border: 3px solid #7a6b40;
     align-content: flex-end;
     flex-wrap: wrap;
-    padding: 10% 20px 12px 20px;
+    padding: 38px 20px 12px 20px;
 }
 
 .trend_link {
@@ -566,7 +561,7 @@ aside {
 
 /*----------------------POPUP--------------------------*/
 
-.popup {
+/*.popup {
     position: fixed;
     width: 100%;
     height: 100%;
@@ -752,15 +747,15 @@ aside {
     left: 5px;
 }
 
-.straight:nth-child(1) {
+.straight-first {
     transform: translateY(5px);
 }
 
-.straight:nth-child(2) {
+.straight_second {
     transform: translateY(13px);
 }
 
-.straight:nth-child(3) {
+.straight_third {
     transform: translateY(21px);
 }
 
@@ -773,7 +768,7 @@ aside {
         position: absolute;
         right: 0;
         top: 0;
-        background-color: rgba(20, 21, 22, 95%);
+        background-color: rgba(20, 21, 22, 95);
     }
 
     .menu-list {
@@ -783,7 +778,7 @@ aside {
         padding: 10px 0 0 0;
     }
 
-    .menu-list-item:nth-child(n + 1) {
+    .menu-list-item {
         margin-left: 0;
         margin-bottom: 30px;
     }
@@ -804,13 +799,13 @@ aside {
 
     /*************************HEADER***************************/
     .header {
-        padding-bottom: 13%;
+        padding-bottom: 125px;
     }
 
     .header-navigation {
-        margin-left: 5%;
+        margin-left: 35px;
         margin-right: 25px;
-        padding-top: 6.5%;
+        padding-top: 50px;
     }
 
     .header-logo {
@@ -831,6 +826,7 @@ aside {
     /*************************TRENDS***************************/
     .trends_container {
         flex-wrap: wrap;
+        display: flex;
     }
 
     .trends_title {
@@ -843,20 +839,20 @@ aside {
     }
 
     .trend_post {
-        width: calc((100%/2) - 5px);
-        margin-bottom: 1%;
-        padding: 6% 20px 13px 20px;
+        width: calc(50% - 46px);
+        margin: 3px;
+        padding: 100px 20px 13px 20px;
     }
 
     /*************************PAGE***************************/
 
     .container-wrapped {
-        margin-top: 9%;
+        margin-top: 50px;
     }
 
     .main {
-        width: 51.5%;
-        margin: 0 4.5%;
+        width: 50%;
+        margin: 0 35px;
     }
 
     .news {
@@ -868,25 +864,12 @@ aside {
         width: 100%;
     }
 
-    .news-header {
-        margin-top: 5%;
-    }
-
     .news-title {
         font-size: 1em;
     }
 
     .news-text {
         font-size: 0.9em;
-    }
-
-    .news-date-author-list {
-        margin-top: 35px;
-        margin-bottom: 30px;
-    }
-
-    .news:nth-last-child(n + 2) {
-        padding-bottom: 0;
     }
 
     .news:after {
@@ -901,8 +884,7 @@ aside {
     /*************************SIDE-BAR***********************/
     .side-bar {
         margin-left: 0;
-        width: 36.1%;
-        margin-right: 2%;
+        width: 33.33%;
     }
 
     .card-title-link {
@@ -913,8 +895,8 @@ aside {
     .shop_container {
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-left: 3.12%;
-        margin-right: 3.12%;
+        margin-left: 35px;
+        margin-right: 35px;
     }
 
     .shop_title {
@@ -922,10 +904,10 @@ aside {
     }
 
     .product_post {
-        width: calc(100%/2 - 45px);
+        width: calc(50% - 45px);
     }
 
-    .product_post:nth-child(3) {
+    .product_post_last {
         margin-top: 46px;
     }
 
@@ -945,14 +927,15 @@ aside {
         }
 
         .trend_post {
-            width: calc((100%/4) - 5px);
-            margin-bottom: 1%;
-            padding: 6% 20px 13px 20px;
+            width: calc(50% - 46px);
+            margin: 3px;
+            padding: 100px 20px 13px 20px;
         }
     }
 
     .footer {
-        margin: 5% 5%;
+        margin-right: 35px;
+        margin-left: 35px;
     }
 
 }
@@ -978,14 +961,13 @@ aside {
     .header-logo-mobile {
         display: block;
         max-width: 270px;
-        margin: 45% auto 14% auto;
+        margin: 225px auto 44px auto;
     }
 
     .header-title {
         font-size: 1.6em;
         width: 280px;
-        margin-top: -22px;
-        margin-bottom: 21.5%;
+        margin-bottom: 220px;
         line-height: 1.5;
     }
 
@@ -1013,13 +995,12 @@ aside {
     .trend_post {
         height: 230px;
         width: 100%;
-        margin-bottom: 1%;
     }
 
     /*******************PAGE*********************/
     .container-wrapped {
         flex-wrap: wrap;
-        margin-top: 7%;
+        margin-top: 44px;
     }
 
     .main {
@@ -1028,7 +1009,7 @@ aside {
 
     .news {
         display: block;
-        margin: 0 5%;
+        margin: 0 15px;
     }
 
     .last-post,
@@ -1037,17 +1018,17 @@ aside {
     }
 
     .news-category-list {
-        margin: 1% 0;
+        margin: 16px 0;
     }
 
     .recent-item-content {
-        margin: 5% 0;
+        margin: 5px 0;
     }
 
     /**********************SIDE-BAR*************************/
 
     .side-bar {
-        margin: 0 5%;
+        margin: 0 15px;
         width: 100%;
     }
 
@@ -1056,7 +1037,7 @@ aside {
     }
 
     .recent-item {
-        width: 85%;
+        width: 100%;
     }
 
     .search-field,
@@ -1077,9 +1058,9 @@ aside {
 
     .product_post {
         width: 100%;
-        margin-bottom: 15%;
-        margin-left: 5%;
-        margin-right: 5%;
+        margin-bottom: 50px;
+        margin-left: 15px;
+        margin-right: 15px;
     }
 
 
@@ -1091,8 +1072,7 @@ aside {
         }
 
         .trend_post {
-            width: calc(100%/2);
-            margin-bottom: 1%;
+            width: 50%;
         }
     }
 }
