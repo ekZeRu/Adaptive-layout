@@ -2,4 +2,4 @@
 
 Сссылка на страницу https://ekzeru.github.io/Adaptive-layout/
 
-Используемые технологии: HTML5, CSS
+Используемые технологии: HTML5, CSS.
